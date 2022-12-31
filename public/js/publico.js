@@ -19,6 +19,9 @@ socket.on('estado-actual', (payload) => {
     console.log("entra");
     console.log(payload);
 
+    const audio = new Audio('../audio/new-ticket.mp3');
+    audio.play()
+
     const [
         ticket1,
         ticket3,
